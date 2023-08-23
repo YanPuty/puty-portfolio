@@ -1,0 +1,51 @@
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(var(--foreground-rgb));
+  font-family: Nohemi, sans-serif;
+}
+
+.body-wrapper {
+  background-image: url(https://assets.website-files.com/646339d86eb49fdc1bcab917/6465e5ed4106bee9dfd14236_bg%20layer.webp), linear-gradient(#828282, #828282);
+  background-position: 50% 0, 0 0;
+  background-repeat: repeat-y, repeat;
+  background-size: 100%, auto;
+  background-attachment: fixed, scroll;
+  padding-bottom: 2rem;
+  height: 100vh;
+
+  .body-noise {
+    z-index: -1;
+    opacity: .1;
+    background-image: url(https://assets.website-files.com/646339d86eb49fdc1bcab917/64663aeeb9f0a97a1b953b03_b080906cfb424a0618cb562917d427f4_w200.gif);
+    background-position: 0 0;
+    background-size: auto;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+}

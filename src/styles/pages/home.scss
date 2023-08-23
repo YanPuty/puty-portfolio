@@ -1,0 +1,71 @@
+.navigation-wrapper {
+  background-color: rgba(255, 255, 255, 0);
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+
+  .navigation-link {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 4.5rem;
+    column-gap: 4.5rem;
+
+    .link-item {
+      cursor: pointer;
+      padding: 1rem;
+    }
+  }
+
+  .mobile-nav {
+    text-align: center;
+    height: 100dvh;
+    background-color: #11131a;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5rem 2rem;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: auto;
+  }
+
+  .navigation-year {
+    width: 28.8rem;
+    max-width: none;
+    right: 3.125rem;
+    color: #9eff00;
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: auto;
+
+    .current-year {
+      font-size: 12.0625rem;
+      color: #9eff00;
+      letter-spacing: -.04em;
+      text-transform: uppercase;
+      line-height: 100.5%;
+    }
+
+    @media only screen and (min-width: 300px) and (max-width: 900px) {
+      position: static;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+
+      .current-year {
+        font-size: 4.875rem;
+      }
+    }
+  }
+
+  .rounded-hamburger {
+    cursor: pointer;
+    border-radius: 50%;
+  }
+}
